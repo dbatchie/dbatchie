@@ -115,6 +115,12 @@ export default function Home() {
               FAQ
             </a>
             <a
+              href="/generate"
+              className="hidden sm:inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition"
+            >
+              Try Generator
+            </a>
+            <a
               href="#waitlist"
               className="inline-flex items-center gap-1.5 rounded-lg bg-orange-600 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-700 transition"
             >
@@ -149,11 +155,21 @@ export default function Home() {
             tailored to your trade. No consultants. No blank pages. Just documents your crew can use today.
           </p>
 
-          <div id="waitlist" className="max-w-md mx-auto mb-8">
+          <div id="waitlist" className="max-w-md mx-auto mb-6">
             <WaitlistForm size="large" />
             <p className="mt-3 text-sm text-slate-500">
               Free to join. No credit card required.
             </p>
+          </div>
+
+          <div className="mb-8">
+            <a
+              href="/generate"
+              className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:border-slate-300 transition shadow-sm"
+            >
+              <FileText className="w-4 h-4 text-orange-600" />
+              Try the generator free →
+            </a>
           </div>
 
           <div className="flex flex-wrap justify-center gap-2">
